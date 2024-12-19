@@ -1,0 +1,130 @@
+/* Basic styling */
+body {
+  font-family: 'Cormorant Garamond', serif; /* Elegant, vintage font */
+  text-align: center;
+  background: #e4f1e1; /* Soft sage green background */
+  padding: 20px;
+  margin: 0;
+  color: #4f4f4f; /* Soft text color for a cozy feel */
+  box-sizing: border-box;
+}
+
+/* Container for centering everything */
+.container {
+  margin-top: 100px;
+}
+
+/* Title styling */
+h1 {
+  font-size: 3rem;
+  color: #6d6d4e; /* Soft earthy green color */
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Fortune cookie container */
+.fortune-cookie-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Cookie parts transition */
+.cookie-part {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Hide elements by default */
+.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Crumbs falling animation */
+.crumb {
+  opacity: 0;
+  transform: translateY(0);
+  position: absolute;
+  font-size: 2rem;
+}
+
+.crumb.fall {
+  animation: fall 1s forwards;
+}
+
+@keyframes fall {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+/* Fortune text with a soft glowing effect */
+#fortune {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #3b6d35; /* Dark green */
+  animation: fade-in 1s;
+}
+
+/* Fade-in animation for fortune */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Button styling with soft green colors */
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #a0b897; /* Soft, muted green */
+  border: 2px solid #5a7a56; /* Darker green border */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+button:hover {
+  background-color: #5a7a56; /* Darker green when hovered */
+  transform: scale(1.1); /* Button grows slightly when hovered */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px #5a7a56;
+}
+
+button.hidden {
+  display: none;
+}
+
+/* Background pattern behind cookie */
+.fortune-cookie-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://www.transparenttextures.com/patterns/wood-pattern.png') repeat; /* Wood texture for cottagecore look */
+  opacity: 0.15;
+  z-index: -1; /* Place behind the fortune cookie */
+}
+
+/* Add some floral touches to the buttons and fortune cookie */
+button, #fortune {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
