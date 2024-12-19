@@ -41,6 +41,14 @@ const fortunes = [
     "Sunsets are proof that endings can be beautiful too.",
     "Be you own priority.",
     "Everything, in time.",
+    "Es wird trotzdem wieder Sommer werden.",
+    "Während du dich grade anzweifelst, erzählen deine Freunde grade jemandem, wie krass du bist.",
+    "Don't look back - You're not going that way.",
+    "Only you decide what breaks you.",
+    "Gewohnheiten sind zuerst Spinnweben - dann Drähte.",
+    "Help! I’m trapped in a fortune cookie factory!",
+    "Patience is the key to joy.",
+    "Great things never come from inside your comfort zone."
     
     
 ];
